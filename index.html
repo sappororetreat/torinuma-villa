@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Torinuma Villa | 富良野 一棟貸切 | Furano Private Villa Hokkaido</title>
+<meta name="description" content="富良野スキー場まで車10分。薰衣草・十勝岳の大自然に囲まれた完全貸切一戸建て。最大10名・ペット可・BBQ可。10 min to Furano ski resort. Private villa up to 10 guests.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&family=Noto+Sans+JP:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --white:#fff;
+  --off:#F7F7F5;
+  --sky:#EEF6FB;
+  --blue:#2E8FC0;
+  --blue-dark:#1A6A96;
+  --orange:#E8784A;
+  --text:#222;
+  --text-mid:#555;
+  --text-light:#999;
+  --border:#E0E0DC;
+  --gap:clamp(4.5rem,9vw,8rem);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Noto Sans JP',sans-serif;font-weight:300;color:var(--text);background:var(--white);line-height:1.9;overflow-x:hidden}
+body.en{font-family:'Raleway',sans-serif;font-weight:300}
+
+/* LANG */
+body.en .ja-text{display:none}
+body.ja .en-text{display:none}
+
+/* UTIL */
+.container{max-width:1080px;margin:0 auto;padding:0 clamp(1.25rem,4vw,3rem)}
+section{padding:var(--gap) 0}
+.section-label{display:block;font-family:'Raleway',sans-serif;font-size:10px;font-weight:600;letter-spacing:.3em;text-transform:uppercase;color:var(--blue);margin-bottom:1rem}
+.section-title{font-family:'Raleway',sans-serif;font-weight:300;font-size:clamp(1.8rem,3.5vw,2.8rem);letter-spacing:.06em;color:var(--text);line-height:1.3;margin-bottom:.5rem}
+.section-lead{font-size:.875rem;color:var(--text-light);margin-bottom:3rem;letter-spacing:.04em}
+hr.divider{border:none;border-top:1px solid var(--border)}
+
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1.2rem clamp(1.25rem,4vw,3rem);display:flex;justify-content:space-between;align-items:center;gap:1rem;transition:background .3s,box-shadow .3s}
+nav.scrolled{background:rgba(255,255,255,.97);backdrop-filter:blur(12px);box-shadow:0 1px 0 var(--border)}
+.logo-wrap{display:flex;align-items:center;gap:10px;text-decoration:none}
+.logo-icon svg{width:34px;height:34px}
+.logo-wordmark{display:flex;flex-direction:column;line-height:1.15}
+.logo-name{font-family:'Raleway',sans-serif;font-weight:600;font-size:1rem;letter-spacing:.12em;text-transform:uppercase;color:#fff;transition:color .3s}
+.logo-place{font-family:'Raleway',sans-serif;font-weight:300;font-size:.6rem;letter-spacing:.24em;text-transform:uppercase;color:rgba(255,255,255,.6);transition:color .3s}
+nav.scrolled .logo-name{color:var(--blue-dark)}
+nav.scrolled .logo-place{color:var(--text-light)}
+.nav-right{display:flex;align-items:center;gap:10px}
+.lang-toggle{display:flex;align-items:center;gap:2px;background:rgba(255,255,255,.14);border-radius:100px;padding:3px;border:1px solid rgba(255,255,255,.28)}
+nav.scrolled .lang-toggle{background:var(--sky);border-color:var(--border)}
+.lang-btn{padding:4px 13px;border-radius:100px;border:none;background:transparent;cursor:pointer;font-family:'Raleway',sans-serif;font-size:10px;font-weight:600;letter-spacing:.1em;color:rgba(255,255,255,.7);transition:all .2s}
+nav.scrolled .lang-btn{color:var(--text-mid)}
+.lang-btn.active{background:#fff;color:var(--blue-dark)}
+nav.scrolled .lang-btn.active{background:var(--blue);color:#fff}
+.nav-book{background:var(--orange);color:#fff;text-decoration:none;padding:9px 20px;border-radius:2px;font-family:'Raleway',sans-serif;font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;transition:background .2s,transform .2s;white-space:nowrap}
+.nav-book:hover{background:#d4663a;transform:translateY(-1px)}
+
+/* HERO */
+#hero{min-height:100svh;position:relative;display:flex;align-items:center;overflow:hidden}
+.hero-bg{position:absolute;inset:0;background:linear-gradient(160deg,rgba(15,60,110,.54) 0%,rgba(10,40,80,.22) 65%,rgba(0,0,0,.05) 100%),url('https://images.unsplash.com/photo-1611679174428-77a86c3d83e5?w=1600&auto=format&fit=crop&q=80') center/cover no-repeat;animation:heroZoom 18s ease-out forwards}
+@keyframes heroZoom{from{transform:scale(1.07)}to{transform:scale(1)}}
+.hero-inner{position:relative;z-index:2;padding:clamp(7rem,11vw,9rem) clamp(1.5rem,5vw,5rem) clamp(4rem,6vw,5rem);max-width:800px;animation:fadeUp 1s ease both}
+@keyframes fadeUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+.hero-eyebrow{font-family:'Raleway',sans-serif;font-size:10px;font-weight:500;letter-spacing:.3em;text-transform:uppercase;color:rgba(255,255,255,.75);display:flex;align-items:center;gap:12px;margin-bottom:1.5rem}
+.hero-eyebrow::before{content:'';display:block;width:32px;height:1px;background:var(--orange)}
+.hero-title{font-family:'Raleway',sans-serif;font-weight:300;font-size:clamp(2.8rem,7vw,5.8rem);color:#fff;line-height:1.1;letter-spacing:.04em;margin-bottom:1.5rem}
+.hero-title strong{font-weight:600;display:block}
+.hero-desc{font-size:clamp(.875rem,1.5vw,1rem);color:rgba(255,255,255,.78);max-width:480px;margin-bottom:2.2rem;font-weight:300;line-height:2;letter-spacing:.04em}
+.hero-pills{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:2.8rem}
+.pill{border:1px solid rgba(255,255,255,.32);color:#fff;font-family:'Raleway',sans-serif;font-size:10px;font-weight:500;letter-spacing:.12em;text-transform:uppercase;padding:6px 14px;border-radius:1px}
+.hero-cta{display:inline-flex;align-items:center;gap:10px;background:var(--orange);color:#fff;text-decoration:none;padding:14px 32px;border-radius:2px;font-family:'Raleway',sans-serif;font-size:11px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;transition:background .2s,transform .2s;box-shadow:0 4px 24px rgba(232,120,74,.38)}
+.hero-cta:hover{background:#d4663a;transform:translateY(-2px)}
+.hero-cta svg{transition:transform .2s}
+.hero-cta:hover svg{transform:translateX(4px)}
+
+/* STATS */
+#stats{background:var(--blue);padding:0}
+.stats-row{display:grid;grid-template-columns:repeat(4,1fr)}
+.stat-item{padding:1.6rem 1rem;text-align:center;border-right:1px solid rgba(255,255,255,.15)}
+.stat-item:last-child{border-right:none}
+.stat-num{font-family:'Raleway',sans-serif;font-weight:300;font-size:2.2rem;letter-spacing:.04em;color:#fff;display:block;line-height:1;margin-bottom:5px}
+.stat-num span{font-size:1rem;font-weight:400;letter-spacing:.08em}
+.stat-label{font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:rgba(255,255,255,.6)}
+
+/* ABOUT */
+#about .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center}
+#about .about-img{aspect-ratio:4/5;object-fit:cover;width:100%;display:block}
+#about .about-text p{font-size:.9rem;color:var(--text-mid);margin-bottom:1.1rem;line-height:2;letter-spacing:.04em}
+
+/* ── FEATURES + AMENITIES 統合 ── */
+#features{background:var(--off)}
+.features-grid{display:grid;grid-template-columns:1fr;gap:0}
+
+.f-row{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  min-height:420px;
+  border-bottom:1px solid var(--border);
+}
+.f-row:last-child{border-bottom:none}
+.f-row.reverse .f-img{order:2}
+.f-row.reverse .f-body{order:1}
+
+.f-img{overflow:hidden;background:var(--sky)}
+.f-img img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .6s ease}
+.f-img:hover img{transform:scale(1.04)}
+
+.f-body{
+  padding:3rem 3.5rem;
+  display:flex;flex-direction:column;justify-content:center;
+  background:var(--white);
+}
+.f-row:nth-child(even) .f-body{background:var(--off)}
+.f-num{font-family:'Raleway',sans-serif;font-weight:300;font-size:2.8rem;color:var(--border);letter-spacing:.04em;display:block;margin-bottom:.5rem;line-height:1}
+.f-body h3{font-family:'Raleway',sans-serif;font-weight:600;font-size:.95rem;letter-spacing:.14em;text-transform:uppercase;color:var(--text);margin-bottom:.8rem}
+.f-body p{font-size:.875rem;color:var(--text-mid);line-height:2;letter-spacing:.04em;margin-bottom:1.25rem}
+
+/* amenity chips inside f-body */
+.amenity-chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:.25rem}
+.chip{
+  font-family:'Raleway',sans-serif;font-size:9px;font-weight:600;
+  letter-spacing:.16em;text-transform:uppercase;
+  padding:5px 12px;border:1px solid var(--border);color:var(--text-mid);
+  border-radius:1px;background:var(--white);
+}
+
+/* GALLERY */
+#gallery{padding-top:0}
+.gallery-grid{display:grid;grid-template-columns:2fr 1fr 1fr;grid-template-rows:260px 260px;gap:6px}
+.g-item{overflow:hidden;background:var(--sky)}
+.g-item:first-child{grid-row:1/3}
+.g-item img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .6s ease}
+.g-item:hover img{transform:scale(1.05)}
+
+/* AROUND */
+#around{background:var(--off)}
+.around-intro{font-size:.875rem;color:var(--text-mid);margin-bottom:3rem;letter-spacing:.04em;max-width:600px}
+
+.around-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:1.5rem;
+}
+
+.around-card{
+  background:var(--white);
+  border:1px solid var(--border);
+  overflow:hidden;
+}
+.around-card-img{
+  width:100%;height:160px;object-fit:cover;display:block;
+  transition:transform .5s ease;
+}
+.around-card:hover .around-card-img{transform:scale(1.04)}
+.around-card-body{padding:1.25rem 1.5rem 1.5rem}
+.around-card-label{
+  font-family:'Raleway',sans-serif;font-size:9px;font-weight:700;
+  letter-spacing:.24em;text-transform:uppercase;color:var(--blue);
+  display:block;margin-bottom:.6rem;
+}
+.around-card h3{
+  font-family:'Raleway',sans-serif;font-weight:600;font-size:.85rem;
+  letter-spacing:.1em;text-transform:uppercase;color:var(--text);
+  margin-bottom:.75rem;
+}
+.around-list{list-style:none}
+.around-list li{
+  display:flex;justify-content:space-between;align-items:center;
+  font-size:.8rem;color:var(--text-mid);padding:.35rem 0;
+  border-bottom:1px solid var(--border);letter-spacing:.03em;
+}
+.around-list li:last-child{border-bottom:none}
+.around-list .dist{
+  font-family:'Raleway',sans-serif;font-size:.7rem;font-weight:600;
+  color:var(--blue-dark);letter-spacing:.06em;white-space:nowrap;
+  flex-shrink:0;margin-left:.5rem;
+}
+
+/* ACCESS MAP */
+#access{background:var(--white)}
+.access-grid{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:start}
+.access-method{margin-bottom:1.75rem}
+.access-method h4{font-family:'Raleway',sans-serif;font-weight:600;font-size:.75rem;letter-spacing:.2em;text-transform:uppercase;color:var(--text);margin-bottom:.75rem;padding-bottom:.5rem;border-bottom:1px solid var(--border)}
+.access-method ul{list-style:none}
+.access-method li{font-size:.875rem;color:var(--text-mid);padding:.45rem 0;border-bottom:1px solid var(--border);letter-spacing:.04em;display:flex;justify-content:space-between;align-items:center}
+.access-method li:last-child{border-bottom:none}
+.access-method .t{font-family:'Raleway',sans-serif;font-size:.75rem;font-weight:600;color:var(--blue-dark);white-space:nowrap;margin-left:.5rem}
+.map-box{background:var(--sky);aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;color:var(--text-light);font-size:.85rem;text-align:center;line-height:1.8;border:1px solid var(--border);letter-spacing:.06em}
+
+/* CONTACT */
+#contact{background:var(--off)}
+.contact-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:5rem;align-items:start}
+.contact-info p{font-size:.875rem;color:var(--text-mid);line-height:2;letter-spacing:.04em;margin-bottom:1.25rem}
+.contact-book{display:inline-flex;align-items:center;gap:10px;background:var(--blue);color:#fff;text-decoration:none;padding:14px 28px;border-radius:2px;font-family:'Raleway',sans-serif;font-size:11px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;transition:background .2s,transform .2s;margin-bottom:2rem;width:100%;justify-content:center}
+.contact-book:hover{background:var(--blue-dark);transform:translateY(-1px)}
+.contact-form{display:flex;flex-direction:column;gap:1rem}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.form-group{display:flex;flex-direction:column;gap:.4rem}
+.form-group label{font-family:'Raleway',sans-serif;font-size:9px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--text-mid)}
+.form-group input,.form-group select,.form-group textarea{border:1px solid var(--border);background:var(--white);padding:.75rem 1rem;font-size:.875rem;color:var(--text);font-family:'Noto Sans JP',sans-serif;font-weight:300;border-radius:2px;outline:none;transition:border-color .2s;letter-spacing:.04em;width:100%}
+body.en .form-group input,body.en .form-group select,body.en .form-group textarea{font-family:'Raleway',sans-serif}
+.form-group input:focus,.form-group select:focus,.form-group textarea:focus{border-color:var(--blue)}
+.form-group textarea{resize:vertical;min-height:130px}
+.form-submit{background:var(--orange);color:#fff;border:none;cursor:pointer;padding:14px 32px;border-radius:2px;font-family:'Raleway',sans-serif;font-size:11px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;transition:background .2s,transform .2s;align-self:flex-start}
+.form-submit:hover{background:#d4663a;transform:translateY(-1px)}
+.form-note{font-size:.75rem;color:var(--text-light);letter-spacing:.04em;margin-top:.25rem}
+#formMsg{display:none;padding:1rem;background:var(--sky);border-left:3px solid var(--blue);font-size:.875rem;color:var(--blue-dark);letter-spacing:.04em;margin-top:.5rem}
+
+/* FOOTER */
+footer{background:var(--text);padding:3rem 0 2rem;color:rgba(255,255,255,.35);font-size:11px;letter-spacing:.1em}
+.footer-inner{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:start;margin-bottom:2rem}
+.footer-logo-name{font-family:'Raleway',sans-serif;font-weight:600;font-size:.95rem;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.7);margin-bottom:.4rem}
+.footer-logo-place{font-family:'Raleway',sans-serif;font-weight:300;font-size:.65rem;letter-spacing:.22em;text-transform:uppercase;color:rgba(255,255,255,.35)}
+.footer-links{display:flex;flex-wrap:wrap;gap:.75rem 1.5rem;justify-content:flex-end}
+.footer-links a{color:rgba(255,255,255,.4);text-decoration:none;font-size:10px;letter-spacing:.14em;text-transform:uppercase;font-family:'Raleway',sans-serif;transition:color .2s}
+.footer-links a:hover{color:rgba(255,255,255,.75)}
+.footer-copy{border-top:1px solid rgba(255,255,255,.08);padding-top:1.5rem;text-align:center;font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:.12em;color:rgba(255,255,255,.25)}
+
+/* REVEAL */
+.reveal{opacity:0;transform:translateY(20px);transition:opacity .65s ease,transform .65s ease}
+.reveal.visible{opacity:1;transform:translateY(0)}
+
+/* RESPONSIVE */
+@media(max-width:960px){
+  .f-row{grid-template-columns:1fr;min-height:auto}
+  .f-row.reverse .f-img{order:0}
+  .f-row.reverse .f-body{order:0}
+  .f-img{height:280px}
+  .f-body{padding:2rem 2rem}
+  .around-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:900px){
+  #about .about-grid{grid-template-columns:1fr;gap:2.5rem}
+  .contact-grid{grid-template-columns:1fr;gap:2.5rem}
+  .footer-inner{grid-template-columns:1fr;gap:1.5rem}
+  .footer-links{justify-content:flex-start}
+}
+@media(max-width:768px){
+  .stats-row{grid-template-columns:repeat(2,1fr)}
+  .stat-item{border-right:none;border-bottom:1px solid rgba(255,255,255,.12)}
+  .stat-item:nth-child(2n){border-right:1px solid rgba(255,255,255,.12)}
+  .stat-item:nth-child(3),.stat-item:nth-child(4){border-bottom:none}
+  .gallery-grid{grid-template-columns:1fr 1fr;grid-template-rows:170px 170px 170px}
+  .g-item:first-child{grid-row:1;grid-column:1/3}
+  .access-grid{grid-template-columns:1fr;gap:2rem}
+  .form-row{grid-template-columns:1fr}
+  .around-grid{grid-template-columns:1fr}
+}
+@media(max-width:480px){
+  .gallery-grid{grid-template-columns:1fr;grid-template-rows:auto}
+  .g-item{height:210px}
+  .g-item:first-child{grid-row:auto;grid-column:auto}
+  .nav-book{display:none}
+}
+</style>
+</head>
+<body class="ja">
+
+<!-- NAV -->
+<nav id="mainNav">
+  <a href="#" class="logo-wrap">
+    <div class="logo-icon">
+      <svg viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <polygon points="17,3 31,28 3,28" fill="none" stroke="rgba(255,255,255,0.65)" stroke-width="1.4" stroke-linejoin="round"/>
+        <polygon points="17,3 12,16 22,16" fill="rgba(255,255,255,0.35)"/>
+        <line x1="3" y1="28" x2="31" y2="28" stroke="rgba(255,255,255,0.4)" stroke-width="1.2"/>
+        <rect x="10" y="22" width="4" height="6" fill="rgba(255,255,255,0.28)"/>
+        <rect x="20" y="22" width="4" height="6" fill="rgba(255,255,255,0.28)"/>
+      </svg>
+    </div>
+    <div class="logo-wordmark">
+      <span class="logo-name">Torinuma Villa</span>
+      <span class="logo-place">Furano · Hokkaido</span>
+    </div>
+  </a>
+  <div class="nav-right">
+    <div class="lang-toggle">
+      <button class="lang-btn active" id="btnJa" onclick="setLang('ja')">JA</button>
+      <button class="lang-btn" id="btnEn" onclick="setLang('en')">EN</button>
+    </div>
+    <a href="https://beds24.com/booking2.php?propid=315590" target="_blank" rel="noopener" class="nav-book">
+      <span class="ja-text">予約する</span>
+      <span class="en-text">Book Now</span>
+    </a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-inner">
+    <p class="hero-eyebrow">
+      <span class="ja-text">北海道 富良野 · 完全貸切一戸建て</span>
+      <span class="en-text">Furano · Hokkaido · Private Entire Villa</span>
+    </p>
+    <h1 class="hero-title">
+      <span class="ja-text">富良野を、<strong>まるごと楽しもう。</strong></span>
+      <span class="en-text">Experience Furano,<strong>all to yourself.</strong></span>
+    </h1>
+    <p class="hero-desc">
+      <span class="ja-text">スキー場まで車10分。薰衣草の丘、十勝岳の絶景。ペット連れも大人数もBBQも——全部できる一棟貸切。</span>
+      <span class="en-text">10 min to the ski resort. Lavender fields, Tokachi views. Pets, big groups, BBQ — all welcome in this fully private villa.</span>
+    </p>
+    <div class="hero-pills">
+      <span class="pill ja-text">スキー場 10分</span>
+      <span class="pill en-text">Ski Resort 10 min</span>
+      <span class="pill ja-text">ペット可</span>
+      <span class="pill en-text">Pets Welcome</span>
+      <span class="pill ja-text">BBQ 可</span>
+      <span class="pill en-text">BBQ Available</span>
+      <span class="pill ja-text">一棟貸切</span>
+      <span class="pill en-text">Entire Villa</span>
+      <span class="pill ja-text">最大 10名</span>
+      <span class="pill en-text">Up to 10 Guests</span>
+    </div>
+    <a href="https://beds24.com/book-torinumavilla" target="_blank" rel="noopener" class="hero-cta">
+      <span class="ja-text">空き確認・予約する</span>
+      <span class="en-text">Check Availability</span>
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </a>
+  </div>
+</section>
+
+<!-- STATS -->
+<div id="stats">
+  <div class="stats-row">
+    <div class="stat-item">
+      <span class="stat-num">10<span class="ja-text"> 名</span><span class="en-text"> ppl</span></span>
+      <span class="stat-label ja-text">最大宿泊人数</span>
+      <span class="stat-label en-text">Max Guests</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-num">3<span>LDK</span></span>
+      <span class="stat-label ja-text">広々間取り</span>
+      <span class="stat-label en-text">Spacious Layout</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-num">10<span class="ja-text"> 分</span><span class="en-text"> min</span></span>
+      <span class="stat-label ja-text">富良野スキー場まで</span>
+      <span class="stat-label en-text">To Furano Ski Resort</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-num">15<span class="ja-text"> 分</span><span class="en-text"> min</span></span>
+      <span class="stat-label ja-text">ファーム富田まで</span>
+      <span class="stat-label en-text">To Farm Tomita</span>
+    </div>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="reveal">
+        <img class="about-img" src="https://images.unsplash.com/photo-1548501916-cc56de5e1382?w=900&auto=format&fit=crop&q=80" alt="Torinuma Villa">
+      </div>
+      <div class="reveal">
+        <span class="section-label">About</span>
+        <h2 class="section-title ja-text">北海道・富良野の<br>大自然に佇む一棟</h2>
+        <h2 class="section-title en-text">A private house<br>in the heart of Furano</h2>
+        <br>
+        <p class="ja-text">富良野市内に位置する完全貸切の一戸建て。3LDKの間取りは最大10名まで対応し、大きなリビングから望む十勝岳連峰の眺めは四季を通じて訪れる人を圧倒します。</p>
+        <p class="en-text">A fully private house in Furano city, Hokkaido. The 3-bedroom layout sleeps up to 10, with sweeping views of the Tokachi mountain range from the spacious living room.</p>
+        <p class="ja-text">家族旅行・グループ旅行・ワーケーション・企業合宿まで多様なニーズに対応。ペットも大歓迎。完全プライベートの空間で、富良野の暮らしをそのまま体験してください。</p>
+        <p class="en-text">Ideal for family trips, group getaways, workcations, or corporate retreats. Pets are very welcome. Experience everyday life in Furano, entirely on your own terms.</p>
+        <p class="ja-text">無料駐車場（ガレージ1台＋屋外複数台）完備。旭川空港から約1時間、札幌から約2時間30分。</p>
+        <p class="en-text">Free parking (garage + outdoor spaces). About 1 hr from Asahikawa Airport, 2.5 hrs from Sapporo.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- FEATURES + AMENITIES 統合 -->
+<section id="features">
+  <div class="container" style="padding-bottom:0">
+    <div class="reveal" style="text-align:center;padding-bottom:3rem">
+      <span class="section-label">Stay &amp; Play</span>
+      <h2 class="section-title ja-text">ここでしかできないこと</h2>
+      <h2 class="section-title en-text">What Makes It Special</h2>
+    </div>
+  </div>
+
+  <div class="features-grid">
+
+    <!-- 01 SKI -->
+    <div class="f-row reveal">
+      <div class="f-img">
+        <img src="https://images.unsplash.com/photo-1548516173-3cabfa4607e9?w=900&auto=format&fit=crop&q=80" alt="Furano ski resort" loading="lazy">
+      </div>
+      <div class="f-body">
+        <span class="f-num">01</span>
+        <h3 class="ja-text">スキー場まで車10分</h3>
+        <h3 class="en-text">Ski Resort · 10 Min</h3>
+        <p class="ja-text">富良野スキー場は北海道屈指のパウダースノー。朝からたっぷり滑って夜はヴィラでゆっくり。スキー用品もそのまま持ち込めます。</p>
+        <p class="en-text">Furano Ski Resort is one of Hokkaido's finest powder destinations. Ski all day and return to a warm private villa every evening.</p>
+      </div>
+    </div>
+
+    <!-- 02 PETS -->
+    <div class="f-row reverse reveal">
+      <div class="f-img">
+        <img src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=900&auto=format&fit=crop&q=80" alt="Pets welcome" loading="lazy">
+      </div>
+      <div class="f-body">
+        <span class="f-num">02</span>
+        <h3 class="ja-text">ペット同伴 OK</h3>
+        <h3 class="en-text">Pets Welcome</h3>
+        <p class="ja-text">ワンちゃんも一緒に富良野の大自然を満喫。完全貸切なので他のゲストを気にせずのびのびと過ごせます。</p>
+        <p class="en-text">Bring your dog along to enjoy the great outdoors. Fully private means no other guests — complete freedom for you and your pets.</p>
+      </div>
+    </div>
+
+    <!-- 03 BBQ -->
+    <div class="f-row reveal">
+      <div class="f-img">
+        <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=900&auto=format&fit=crop&q=80" alt="BBQ outdoor" loading="lazy">
+      </div>
+      <div class="f-body">
+        <span class="f-num">03</span>
+        <h3 class="ja-text">BBQ・花火</h3>
+        <h3 class="en-text">BBQ &amp; Fireworks</h3>
+        <p class="ja-text">専用スペースでBBQ、夜は満天の星空の下で花火も。BBQ器材レンタルあり。北海道の食材を囲む特別な夜を。</p>
+        <p class="en-text">Fire up the BBQ in the private outdoor space and enjoy fireworks under a sky full of stars. Equipment rental available on request.</p>
+      </div>
+    </div>
+
+    <!-- 04 ENTIRE VILLA -->
+    <div class="f-row reverse reveal">
+      <div class="f-img">
+        <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=900&auto=format&fit=crop&q=80" alt="Private villa interior" loading="lazy">
+      </div>
+      <div class="f-body">
+        <span class="f-num">04</span>
+        <h3 class="ja-text">一棟まるごと貸切</h3>
+        <h3 class="en-text">Entire Villa, Just Yours</h3>
+        <p class="ja-text">他の宿泊客がいない完全プライベート空間。家族・グループ・合宿にも最適。3LDKで最大10名まで快適に。</p>
+        <p class="en-text">No shared spaces. The entire 3-bedroom house is yours — perfect for families, friend groups, or corporate retreats up to 10 people.</p>
+      </div>
+    </div>
+
+    <!-- 05 NATURE -->
+    <div class="f-row reveal">
+      <div class="f-img">
+        <img src="https://images.unsplash.com/photo-1490682143684-14369e18dce8?w=900&auto=format&fit=crop&q=80" alt="Furano lavender and nature" loading="lazy">
+      </div>
+      <div class="f-body">
+        <span class="f-num">05</span>
+        <h3 class="ja-text">富良野・美瑛の観光拠点</h3>
+        <h3 class="en-text">Perfect Base to Explore</h3>
+        <p class="ja-text">ファーム富田・美瑛・ニングルテラスなど人気スポットへすぐ。旭川空港から1時間、札幌から2.5時間。</p>
+        <p class="en-text">Farm Tomita, Biei, and Ningle Terrace are all close by. Easily accessible from Asahikawa Airport (1 hr) and Sapporo (2.5 hrs).</p>
+      </div>
+    </div>
+
+    <!-- 06 AMENITIES -->
+    <div class="f-row reverse reveal">
+      <div class="f-img">
+        <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=900&auto=format&fit=crop&q=80" alt="Full kitchen and facilities" loading="lazy">
+      </div>
+      <div class="f-body">
+        <span class="f-num">06</span>
+        <h3 class="ja-text">充実した設備</h3>
+        <h3 class="en-text">All the Comforts of Home</h3>
+        <p class="ja-text">高速Wi-Fi・フルキッチン・ドラム式洗濯機・食洗機・全室冷暖房完備。ワーケーションや長期滞在にも対応。</p>
+        <p class="en-text">High-speed Wi-Fi, full kitchen, washer/dryer, dishwasher, A/C &amp; heating throughout. Great for workcations and extended stays too.</p>
+        <div class="amenity-chips">
+          <span class="chip ja-text">最大10名</span>
+          <span class="chip en-text">Sleeps 10</span>
+          <span class="chip ja-text">ペット可</span>
+          <span class="chip en-text">Pets OK</span>
+          <span class="chip ja-text">BBQ可</span>
+          <span class="chip en-text">BBQ</span>
+          <span class="chip ja-text">花火可</span>
+          <span class="chip en-text">Fireworks</span>
+          <span class="chip ja-text">フルキッチン</span>
+          <span class="chip en-text">Full Kitchen</span>
+          <span class="chip ja-text">高速Wi-Fi</span>
+          <span class="chip en-text">Wi-Fi</span>
+          <span class="chip ja-text">食洗機</span>
+          <span class="chip en-text">Dishwasher</span>
+          <span class="chip ja-text">ドラム式洗濯機</span>
+          <span class="chip en-text">Washer/Dryer</span>
+          <span class="chip ja-text">全室冷暖房</span>
+          <span class="chip en-text">A/C &amp; Heating</span>
+          <span class="chip ja-text">無料駐車場</span>
+          <span class="chip en-text">Free Parking</span>
+          <span class="chip ja-text">セルフチェックイン</span>
+          <span class="chip en-text">Self Check-in</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery">
+  <div class="container">
+    <span class="section-label reveal">Gallery</span>
+    <h2 class="section-title reveal ja-text">富良野の四季</h2>
+    <h2 class="section-title reveal en-text">Furano Through the Seasons</h2>
+    <p class="section-lead reveal ja-text">どの季節に来ても、ここでしか見られない景色がある。</p>
+    <p class="section-lead reveal en-text">Every season brings a completely different view.</p>
+    <div class="gallery-grid reveal">
+      <div class="g-item"><img src="https://images.unsplash.com/photo-1611679174428-77a86c3d83e5?w=900&auto=format&fit=crop&q=80" alt="Furano ski winter" loading="lazy"></div>
+      <div class="g-item"><img src="https://images.unsplash.com/photo-1490682143684-14369e18dce8?w=600&auto=format&fit=crop&q=80" alt="Lavender fields" loading="lazy"></div>
+      <div class="g-item"><img src="https://images.unsplash.com/photo-1551632811-561732d1e306?w=600&auto=format&fit=crop&q=80" alt="Tokachi mountains" loading="lazy"></div>
+      <div class="g-item"><img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=600&auto=format&fit=crop&q=80" alt="Autumn hills" loading="lazy"></div>
+      <div class="g-item"><img src="https://images.unsplash.com/photo-1519985176271-adb1088fa94c?w=600&auto=format&fit=crop&q=80" alt="BBQ night" loading="lazy"></div>
+    </div>
+  </div>
+</section>
+
+<!-- AROUND -->
+<section id="around">
+  <div class="container">
+    <span class="section-label reveal">Look Around</span>
+    <h2 class="section-title reveal ja-text">周辺のおすすめスポット</h2>
+    <h2 class="section-title reveal en-text">What's Nearby</h2>
+    <p class="around-intro reveal ja-text">富良野・美瑛エリアの人気スポットへのアクセス良好。ラベンダー園・スキー場・ワイナリー・自然公園がすぐそこに。</p>
+    <p class="around-intro reveal en-text">Perfectly placed for Furano and Biei's best attractions — lavender farms, ski resorts, wineries, and wide-open nature all within easy reach.</p>
+
+    <div class="around-grid reveal">
+
+      <div class="around-card">
+        <img class="around-card-img" src="https://images.unsplash.com/photo-1490682143684-14369e18dce8?w=600&auto=format&fit=crop&q=80" alt="Lavender" loading="lazy">
+        <div class="around-card-body">
+          <span class="around-card-label ja-text">花・ラベンダー</span>
+          <span class="around-card-label en-text">Flowers &amp; Lavender</span>
+          <ul class="around-list">
+            <li><span class="ja-text">ファーム富田</span><span class="en-text">Farm Tomita</span><span class="dist ja-text">15分</span><span class="dist en-text">15 min</span></li>
+            <li><span class="ja-text">北星山ラベンダー園</span><span class="en-text">Hokuseizan Lavender</span><span class="dist ja-text">10分</span><span class="dist en-text">10 min</span></li>
+            <li><span class="ja-text">日の出公園ラベンダー園</span><span class="en-text">Hinode Park</span><span class="dist ja-text">15分</span><span class="dist en-text">15 min</span></li>
+            <li><span class="ja-text">四季彩の丘（美瑛）</span><span class="en-text">Shikisai-no-Oka</span><span class="dist ja-text">30分</span><span class="dist en-text">30 min</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="around-card">
+        <img class="around-card-img" src="https://images.unsplash.com/photo-1548516173-3cabfa4607e9?w=600&auto=format&fit=crop&q=80" alt="Ski" loading="lazy">
+        <div class="around-card-body">
+          <span class="around-card-label ja-text">ウィンタースポーツ</span>
+          <span class="around-card-label en-text">Winter Sports</span>
+          <ul class="around-list">
+            <li><span class="ja-text">富良野スキー場</span><span class="en-text">Furano Ski Resort</span><span class="dist ja-text">10分</span><span class="dist en-text">10 min</span></li>
+            <li><span class="ja-text">十勝岳温泉</span><span class="en-text">Tokachidake Onsen</span><span class="dist ja-text">35分</span><span class="dist en-text">35 min</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="around-card">
+        <img class="around-card-img" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&auto=format&fit=crop&q=80" alt="Nature park" loading="lazy">
+        <div class="around-card-body">
+          <span class="around-card-label ja-text">自然・公園</span>
+          <span class="around-card-label en-text">Nature &amp; Parks</span>
+          <ul class="around-list">
+            <li><span class="ja-text">鳥沼公園</span><span class="en-text">Torinuma Park</span><span class="dist ja-text">5分</span><span class="dist en-text">5 min</span></li>
+            <li><span class="ja-text">ニングルテラス</span><span class="en-text">Ningle Terrace</span><span class="dist ja-text">10分</span><span class="dist en-text">10 min</span></li>
+            <li><span class="ja-text">青い池（美瑛）</span><span class="en-text">Blue Pond (Biei)</span><span class="dist ja-text">35分</span><span class="dist en-text">35 min</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="around-card">
+        <img class="around-card-img" src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=600&auto=format&fit=crop&q=80" alt="Winery" loading="lazy">
+        <div class="around-card-body">
+          <span class="around-card-label ja-text">ワイナリー・グルメ</span>
+          <span class="around-card-label en-text">Winery &amp; Food</span>
+          <ul class="around-list">
+            <li><span class="ja-text">ふらのワイン工場</span><span class="en-text">Furano Winery</span><span class="dist ja-text">8分</span><span class="dist en-text">8 min</span></li>
+            <li><span class="ja-text">富良野チーズ工房</span><span class="en-text">Furano Cheese Factory</span><span class="dist ja-text">10分</span><span class="dist en-text">10 min</span></li>
+            <li><span class="ja-text">カンパーナ六花亭</span><span class="en-text">Campana Rokkatei</span><span class="dist ja-text">10分</span><span class="dist en-text">10 min</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="around-card">
+        <img class="around-card-img" src="https://images.unsplash.com/photo-1551632811-561732d1e306?w=600&auto=format&fit=crop&q=80" alt="Biei Hokkaido" loading="lazy">
+        <div class="around-card-body">
+          <span class="around-card-label ja-text">美瑛・観光</span>
+          <span class="around-card-label en-text">Biei &amp; Sightseeing</span>
+          <ul class="around-list">
+            <li><span class="ja-text">青い池</span><span class="en-text">Blue Pond</span><span class="dist ja-text">35分</span><span class="dist en-text">35 min</span></li>
+            <li><span class="ja-text">白髭の滝</span><span class="en-text">Shirogane Falls</span><span class="dist ja-text">40分</span><span class="dist en-text">40 min</span></li>
+            <li><span class="ja-text">パッチワークの路</span><span class="en-text">Patchwork Road</span><span class="dist ja-text">30分</span><span class="dist en-text">30 min</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="around-card">
+        <img class="around-card-img" src="https://images.unsplash.com/photo-1587174486073-ae5e5cff23aa?w=600&auto=format&fit=crop&q=80" alt="Golf course Furano" loading="lazy">
+        <div class="around-card-body">
+          <span class="around-card-label ja-text">ゴルフ</span>
+          <span class="around-card-label en-text">Golf</span>
+          <ul class="around-list">
+            <li><span class="ja-text">富良野ゴルフコース（プリンス・36H）</span><span class="en-text">Furano Golf Course (Prince)</span><span class="dist ja-text">15分</span><span class="dist en-text">15 min</span></li>
+            <li><span class="ja-text">空知川ラベンダーの森ゴルフコース</span><span class="en-text">Sorachi River Lavender Golf</span><span class="dist ja-text">10分</span><span class="dist en-text">10 min</span></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ACCESS MAP -->
+<section id="access">
+  <div class="container">
+    <span class="section-label reveal">Access</span>
+    <h2 class="section-title reveal ja-text">アクセス</h2>
+    <h2 class="section-title reveal en-text">How to Get Here</h2>
+    <div class="access-grid reveal">
+      <div>
+        <div class="access-method">
+          <h4 class="ja-text">空港・主要都市から</h4>
+          <h4 class="en-text">From Airports &amp; Cities</h4>
+          <ul>
+            <li><span class="ja-text">旭川空港より（国道237号経由）</span><span class="en-text">Asahikawa Airport (Rte 237)</span><span class="t ja-text">車 約60分</span><span class="t en-text">~60 min</span></li>
+            <li><span class="ja-text">新千歳空港より（道東道・占冠IC経由）</span><span class="en-text">New Chitose Airport</span><span class="t ja-text">車 約2時間</span><span class="t en-text">~2 hrs</span></li>
+            <li><span class="ja-text">札幌市内より（道央道・三笠IC経由）</span><span class="en-text">Sapporo city</span><span class="t ja-text">車 約2.5時間</span><span class="t en-text">~2.5 hrs</span></li>
+          </ul>
+        </div>
+        <div class="access-method">
+          <h4 class="ja-text">鉄道・最寄り駅から</h4>
+          <h4 class="en-text">From Nearby Stations</h4>
+          <ul>
+            <li><span class="ja-text">JR富良野駅より</span><span class="en-text">JR Furano Station</span><span class="t ja-text">車 約8分</span><span class="t en-text">~8 min</span></li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <div class="map-box">
+          <span class="ja-text">Googleマップを<br>ここに埋め込みます</span>
+          <span class="en-text">Google Map<br>embed here</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="reveal">
+        <span class="section-label">Book &amp; Contact</span>
+        <h2 class="section-title ja-text">ご予約・お問い合わせ</h2>
+        <h2 class="section-title en-text">Book &amp; Enquiries</h2>
+        <br>
+        <p class="ja-text">Beds24からオンライン予約が可能です。空き状況・料金はボタンよりご確認ください。</p>
+        <p class="en-text">You can book online via Beds24. Check availability and pricing using the button below.</p>
+        <br>
+        <a href="https://beds24.com/book-torinumavilla" target="_blank" rel="noopener" class="contact-book">
+          <span class="ja-text">空き確認・オンライン予約</span>
+          <span class="en-text">Check Availability &amp; Book</span>
+        </a>
+        <p class="ja-text">ご質問・ご不明な点はフォームよりお気軽にどうぞ。通常1〜2営業日以内にご返信いたします。</p>
+        <p class="en-text">For questions or special requests, please use the contact form. We typically reply within 1–2 business days.</p>
+      </div>
+      <div class="reveal">
+        <form class="contact-form" id="contactForm" onsubmit="submitForm(event)">
+          <div class="form-row">
+            <div class="form-group">
+              <label><span class="ja-text">お名前 *</span><span class="en-text">Name *</span></label>
+              <input type="text" name="name" required>
+            </div>
+            <div class="form-group">
+              <label><span class="ja-text">メールアドレス *</span><span class="en-text">Email *</span></label>
+              <input type="email" name="email" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label><span class="ja-text">チェックイン希望日</span><span class="en-text">Desired Check-in</span></label>
+              <input type="date" name="checkin">
+            </div>
+            <div class="form-group">
+              <label><span class="ja-text">チェックアウト希望日</span><span class="en-text">Desired Check-out</span></label>
+              <input type="date" name="checkout">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label><span class="ja-text">宿泊人数</span><span class="en-text">Number of Guests</span></label>
+              <select name="guests">
+                <option value="">-</option>
+                <option>1</option><option>2</option><option>3</option><option>4</option>
+                <option>5</option><option>6</option><option>7</option><option>8</option>
+                <option>9</option><option>10</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label><span class="ja-text">ペット同伴</span><span class="en-text">Bringing Pets?</span></label>
+              <select name="pets">
+                <option value="">-</option>
+                <option value="no">いいえ / No</option>
+                <option value="yes">はい / Yes</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label><span class="ja-text">お問い合わせ内容 *</span><span class="en-text">Message *</span></label>
+            <textarea name="message" required></textarea>
+          </div>
+          <div>
+            <button type="submit" class="form-submit">
+              <span class="ja-text">送信する</span>
+              <span class="en-text">Send Message</span>
+            </button>
+            <p class="form-note ja-text">送信後、確認メールをお送りします。</p>
+            <p class="form-note en-text">You will receive a confirmation email after submission.</p>
+          </div>
+          <div id="formMsg"></div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <div>
+        <div class="footer-logo-name">Torinuma Villa</div>
+        <div class="footer-logo-place">Furano · Hokkaido · Japan</div>
+      </div>
+      <div class="footer-links">
+        <a href="#about" class="ja-text">物件について</a>
+        <a href="#about" class="en-text">About</a>
+        <a href="#features" class="ja-text">特徴・設備</a>
+        <a href="#features" class="en-text">Features</a>
+        <a href="#around" class="ja-text">周辺情報</a>
+        <a href="#around" class="en-text">Location</a>
+        <a href="#contact" class="ja-text">お問い合わせ</a>
+        <a href="#contact" class="en-text">Contact</a>
+        <a href="https://beds24.com/book-torinumavilla" target="_blank" rel="noopener" class="ja-text">予約する</a>
+        <a href="https://beds24.com/book-torinumavilla" target="_blank" rel="noopener" class="en-text">Book Now</a>
+      </div>
+    </div>
+    <div class="footer-copy">© 2025 Torinuma Villa · Furano, Hokkaido, Japan</div>
+  </div>
+</footer>
+
+<script>
+const nav=document.getElementById('mainNav');
+window.addEventListener('scroll',()=>nav.classList.toggle('scrolled',scrollY>60),{passive:true});
+
+const obs=new IntersectionObserver(entries=>{
+  entries.forEach((e,i)=>{
+    if(e.isIntersecting){setTimeout(()=>e.target.classList.add('visible'),i*60);obs.unobserve(e.target)}
+  });
+},{threshold:.08,rootMargin:'0px 0px -30px 0px'});
+document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+
+function switchSeason(idx){
+  document.querySelectorAll('.s-tab').forEach((t,i)=>t.classList.toggle('active',i===idx));
+  document.querySelectorAll('.season-panel').forEach((p,i)=>p.classList.toggle('active',i===idx));
+}
+
+function setLang(lang){
+  document.body.className=lang;
+  document.documentElement.lang=lang==='ja'?'ja':'en';
+  document.getElementById('btnJa').classList.toggle('active',lang==='ja');
+  document.getElementById('btnEn').classList.toggle('active',lang==='en');
+  localStorage.setItem('tv_lang',lang);
+}
+(function(){const s=localStorage.getItem('tv_lang');if(s&&s!=='ja')setLang(s);})();
+
+function submitForm(e){
+  e.preventDefault();
+  const msg=document.getElementById('formMsg');
+  const isJa=document.body.classList.contains('ja');
+  msg.style.display='block';
+  msg.style.cssText='display:block;padding:1rem;background:var(--sky);border-left:3px solid var(--blue);font-size:.875rem;color:var(--blue-dark);letter-spacing:.04em;margin-top:.5rem';
+  msg.textContent=isJa?'送信しました。1〜2営業日以内にご返信いたします。':'Message sent! We will get back to you within 1–2 business days.';
+  e.target.reset();
+}
+</script>
+</body>
+</html>
