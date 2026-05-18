@@ -5,7 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Torinuma Villa | 富良野 一棟貸切ヴィラ | 最大10名・ペット可・BBQ可</title>
 <meta name="description" content="富良野スキー場まで車10分。十勝岳の絶景、薰衣草の丘。最大10名・ペット可・BBQ可の完全貸切一戸建て。3LDK・無料駐車場。Furano private villa, 10 min to ski resort, up to 10 guests, pets welcome.">
-<meta name="keywords" content="富良野 一棟貸し,富良野 貸切ヴィラ,富良野 コテージ 大人数,富良野 ペット可,富良野 一戸建て,furano private villa,furano vacation rental,furano villa hokkaido">
+<meta name="keywords" content="富良野 一棟貸し,富良野 貸切ヴィラ,富良野 コテージ 大人数,富良野 ペット可,富良野 犬 ok,富良野 BBQ,富良野 バーベキュー,富良野 一戸建て,富良野 貸別荘,furano private villa,furano vacation rental,furano bbq,furano pet friendly,furano dog friendly,furano hokkaido villa">
+<meta name="robots" content="index, follow">
+<link rel="preload" as="image" href="https://sappororetreat.github.io/torinuma-villa/hero.jpg">
 <link rel="canonical" href="https://sappororetreat.github.io/torinuma-villa/">
 <link rel="alternate" hreflang="ja" href="https://sappororetreat.github.io/torinuma-villa/">
 <link rel="alternate" hreflang="en" href="https://sappororetreat.github.io/torinuma-villa/">
@@ -270,6 +272,53 @@ nav.scrolled .lang-btn.active{background:var(--blue);color:#fff}
   letter-spacing:.16em;text-transform:uppercase;
   padding:6px 14px;border:1px solid var(--border);color:var(--text-mid);
   border-radius:1px;background:var(--white);
+}
+
+/* ROOMS & AMENITIES */
+#rooms{background:var(--off)}
+.room-rows{display:flex;flex-direction:column;gap:0;margin-bottom:5rem;border:1px solid var(--border)}
+.room-row{display:grid;grid-template-columns:1fr 1fr;border-bottom:1px solid var(--border)}
+.room-row:last-child{border-bottom:none}
+.room-row-rev .room-row-img{order:2}
+.room-row-rev .room-row-body{order:1}
+.room-row-img{overflow:hidden;background:var(--sky);min-height:280px}
+.room-row-img img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s ease}
+.room-row:hover .room-row-img img{transform:scale(1.04)}
+.room-row-body{padding:2.5rem 3rem;display:flex;flex-direction:column;justify-content:center;background:var(--white)}
+.room-num{font-family:'Raleway',sans-serif;font-weight:700;font-size:.7rem;letter-spacing:.18em;color:var(--blue);background:var(--sky);padding:5px 12px;border-radius:2px;display:inline-block;margin-bottom:.75rem;width:fit-content}
+.room-row-title{font-family:'Raleway',sans-serif;font-weight:600;font-size:1rem;letter-spacing:.1em;color:var(--text);margin-bottom:1rem}
+.room-detail-list{list-style:none;display:flex;flex-direction:column;gap:.25rem}
+.room-detail-list li{font-size:.875rem;color:var(--text-mid);padding:.3rem 0;border-bottom:1px solid var(--border);letter-spacing:.04em}
+.room-detail-list li:last-child{border-bottom:none}
+
+/* SPECIAL FEATURES */
+.special-features{border-top:1px solid var(--border);padding-top:4rem;margin-bottom:4rem}
+.special-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.5rem}
+.special-card{border:1.5px solid var(--border);background:var(--white);overflow:hidden}
+.special-img{width:100%;height:200px;object-fit:cover;display:block}
+.special-body{padding:1.5rem}
+.special-label{font-family:'Raleway',sans-serif;font-size:9px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--blue);display:block;margin-bottom:.5rem}
+.special-title{font-family:'Raleway',sans-serif;font-weight:600;font-size:.9rem;letter-spacing:.08em;color:var(--text);margin-bottom:.75rem}
+.special-list{list-style:none;display:flex;flex-direction:column;gap:.1rem}
+.special-list li{font-size:.8rem;color:var(--text-mid);padding:.35rem 0;border-bottom:1px solid var(--border);letter-spacing:.04em}
+.special-list li:last-child{border-bottom:none}
+
+.amenities-section{border-top:1px solid var(--border);padding-top:3rem}
+.amenities-section-title{font-family:'Raleway',sans-serif;font-weight:600;font-size:.8rem;letter-spacing:.2em;text-transform:uppercase;color:var(--text);margin-bottom:2rem}
+.amenities-cols{display:grid;grid-template-columns:repeat(3,1fr);gap:3rem}
+.amenities-col-label{font-family:'Raleway',sans-serif;font-size:.7rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--blue);margin-bottom:.75rem;padding-bottom:.5rem;border-bottom:1px solid var(--border)}
+.amenities-list{list-style:none;display:flex;flex-direction:column;gap:.1rem}
+.amenities-list li{font-size:.85rem;color:var(--text-mid);padding:.4rem 0;border-bottom:1px solid var(--border);letter-spacing:.04em}
+.amenities-list li:last-child{border-bottom:none}
+
+@media(max-width:900px){
+  .room-row{grid-template-columns:1fr}
+  .room-row-rev .room-row-img{order:0}
+  .room-row-rev .room-row-body{order:0}
+  .room-row-img{min-height:220px}
+  .room-row-body{padding:1.75rem 1.5rem}
+  .special-grid{grid-template-columns:1fr}
+  .amenities-cols{grid-template-columns:1fr;gap:2rem}
 }
 
 /* GALLERY */
@@ -565,7 +614,7 @@ footer{background:var(--text);padding:3rem 0 2rem;color:rgba(255,255,255,.35);fo
     <!-- 03 BBQ -->
     <div class="f-row reveal">
       <div class="f-img">
-        <img src="https://sappororetreat.github.io/torinuma-villa/bbq.jpg" alt="BBQ outdoor" loading="lazy">
+        <img src="https://sappororetreat.github.io/torinuma-villa/outdoor.jpg" alt="BBQ outdoor" loading="lazy">
       </div>
       <div class="f-body">
         <span class="f-num">03</span>
@@ -579,7 +628,7 @@ footer{background:var(--text);padding:3rem 0 2rem;color:rgba(255,255,255,.35);fo
     <!-- 04 ENTIRE VILLA -->
     <div class="f-row reverse reveal">
       <div class="f-img">
-        <img src="https://sappororetreat.github.io/torinuma-villa/interior.jpg" alt="Private villa interior" loading="lazy">
+        <img src="https://sappororetreat.github.io/torinuma-villa/room3.jpg" alt="Private villa interior" loading="lazy">
       </div>
       <div class="f-body">
         <span class="f-num">04</span>
@@ -599,15 +648,15 @@ footer{background:var(--text);padding:3rem 0 2rem;color:rgba(255,255,255,.35);fo
         <span class="f-num">05</span>
         <h3 class="ja-text">富良野・美瑛の観光拠点</h3>
         <h3 class="en-text">Perfect Base to Explore</h3>
-        <p class="ja-text">ファーム富田・美瑛・ニングルテラスなど人気スポットへすぐ。旭川空港から1時間、札幌から2.5時間。</p>
-        <p class="en-text">Farm Tomita, Biei, and Ningle Terrace are all close by. Easily accessible from Asahikawa Airport (1 hr) and Sapporo (2.5 hrs).</p>
+        <p class="ja-text">ファーム富田・美瑛・ニングルテラスなど人気スポットへすぐ。旭川空港から1時間、新千歳空港から2時間、札幌から2.5時間。</p>
+        <p class="en-text">Farm Tomita, Biei, and Ningle Terrace are all close by. 1 hr from Asahikawa Airport, 2 hrs from New Chitose Airport, 2.5 hrs from Sapporo.</p>
       </div>
     </div>
 
     <!-- 06 AMENITIES -->
     <div class="f-row reverse reveal">
       <div class="f-img">
-        <img src="https://sappororetreat.github.io/torinuma-villa/kitchen.jpg" alt="Full kitchen and facilities" loading="lazy">
+        <img src="https://sappororetreat.github.io/torinuma-villa/ldk.jpg" alt="Full kitchen and facilities" loading="lazy">
       </div>
       <div class="f-body">
         <span class="f-num">06</span>
@@ -638,6 +687,240 @@ footer{background:var(--text);padding:3rem 0 2rem;color:rgba(255,255,255,.35);fo
           <span class="chip en-text">Free Parking</span>
           <span class="chip ja-text">セルフチェックイン</span>
           <span class="chip en-text">Self Check-in</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ROOMS & AMENITIES -->
+<section id="rooms">
+  <div class="container">
+    <span class="section-label reveal">Rooms &amp; Amenities</span>
+    <h2 class="section-title reveal ja-text">間取り・設備案内</h2>
+    <h2 class="section-title reveal en-text">Rooms &amp; Facilities</h2>
+    <p class="section-lead reveal ja-text">3LDK・2階建て・延床面積約123㎡。最大10名が快適に過ごせる空間。</p>
+    <p class="section-lead reveal en-text">3 bedrooms · 2 floors · approx. 123㎡ · Sleeps up to 10</p>
+
+    <!-- ROOM ROWS -->
+    <div class="room-rows">
+
+      <!-- 01 寝室1 -->
+      <div class="room-row reveal">
+        <div class="room-row-img">
+          <img src="https://sappororetreat.github.io/torinuma-villa/room1.jpg" alt="寝室1" loading="lazy">
+        </div>
+        <div class="room-row-body">
+          <span class="room-num">01</span>
+          <h3 class="room-row-title ja-text">寝室 1　— 最大4名</h3>
+          <h3 class="room-row-title en-text">Bedroom 1 — Up to 4 guests</h3>
+          <ul class="room-detail-list">
+            <li class="ja-text">セミダブルベッド × 2</li>
+            <li class="en-text">Semi-double bed × 2</li>
+            <li class="ja-text">大型ウォークインクローゼット</li>
+            <li class="en-text">Large walk-in closet</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 02 寝室2 -->
+      <div class="room-row room-row-rev reveal">
+        <div class="room-row-img">
+          <img src="https://sappororetreat.github.io/torinuma-villa/room2.jpg" alt="寝室2" loading="lazy">
+        </div>
+        <div class="room-row-body">
+          <span class="room-num">02</span>
+          <h3 class="room-row-title ja-text">寝室 2　— 最大4名</h3>
+          <h3 class="room-row-title en-text">Bedroom 2 — Up to 4 guests</h3>
+          <ul class="room-detail-list">
+            <li class="ja-text">セミダブルベッド × 1</li>
+            <li class="en-text">Semi-double bed × 1</li>
+            <li class="ja-text">マットレス × 1（ロフト）</li>
+            <li class="en-text">Floor mattress × 1 (loft style)</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 03 寝室3 -->
+      <div class="room-row reveal">
+        <div class="room-row-img">
+          <img src="https://sappororetreat.github.io/torinuma-villa/room3.jpg" alt="寝室3" loading="lazy">
+        </div>
+        <div class="room-row-body">
+          <span class="room-num">03</span>
+          <h3 class="room-row-title ja-text">寝室 3　— 最大2名</h3>
+          <h3 class="room-row-title en-text">Bedroom 3 — Up to 2 guests</h3>
+          <ul class="room-detail-list">
+            <li class="ja-text">シングルベッド × 2</li>
+            <li class="en-text">Single bed × 2</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- LDK -->
+      <div class="room-row room-row-rev reveal">
+        <div class="room-row-img">
+          <img src="https://sappororetreat.github.io/torinuma-villa/ldk.jpg" alt="リビング・ダイニング・キッチン" loading="lazy">
+        </div>
+        <div class="room-row-body">
+          <span class="room-num">LDK</span>
+          <h3 class="room-row-title ja-text">リビング・ダイニング・キッチン</h3>
+          <h3 class="room-row-title en-text">Living / Dining / Kitchen</h3>
+          <ul class="room-detail-list">
+            <li class="ja-text">十勝岳連峰を望む大きな窓</li>
+            <li class="en-text">Large windows with Tokachi mountain views</li>
+            <li class="ja-text">ソファ（3人掛け）・ダイニングテーブル（4人掛け）</li>
+            <li class="en-text">3-seat sofa · 4-seat dining table</li>
+            <li class="ja-text">テレビ（Netflix等 動画配信対応）</li>
+            <li class="en-text">Smart TV (Netflix &amp; streaming ready)</li>
+            <li class="ja-text">冷蔵庫・電子レンジ・炊飯器・ケトル</li>
+            <li class="en-text">Fridge, microwave, rice cooker, kettle</li>
+            <li class="ja-text">食洗機・調理器具・食器類一式</li>
+            <li class="en-text">Dishwasher, cookware &amp; tableware</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- SPECIAL FEATURES 差別化3ポイント -->
+    <div class="special-features reveal">
+      <h3 class="amenities-section-title ja-text">Torinuma Villa の強み</h3>
+      <h3 class="amenities-section-title en-text">What Torinuma Villa Offers</h3>
+      <div class="special-grid">
+
+        <div class="special-card">
+          <img src="https://sappororetreat.github.io/torinuma-villa/outdoor.jpg" alt="BBQ・庭" loading="lazy" class="special-img">
+          <div class="special-body">
+            <span class="special-label ja-text">庭・アウトドア</span>
+            <span class="special-label en-text">Outdoor Space</span>
+            <h4 class="special-title ja-text">BBQ・花火・広々駐車場</h4>
+            <h4 class="special-title en-text">BBQ, Fireworks &amp; Parking</h4>
+            <ul class="special-list">
+              <li class="ja-text">BBQスペース完備（器材レンタルあり）</li>
+              <li class="en-text">BBQ area with equipment rental available</li>
+              <li class="ja-text">花火OK（周辺への配慮をお願いします）</li>
+              <li class="en-text">Fireworks allowed (with consideration for neighbors)</li>
+              <li class="ja-text">ガレージ1台＋屋外複数台・無料駐車場</li>
+              <li class="en-text">Garage (1) + multiple outdoor spaces, free</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="special-card">
+          <img src="https://sappororetreat.github.io/torinuma-villa/pet.jpg" alt="ペット可" loading="lazy" class="special-img">
+          <div class="special-body">
+            <span class="special-label ja-text">ペット同伴</span>
+            <span class="special-label en-text">Pet Friendly</span>
+            <h4 class="special-title ja-text">大切な家族も一緒に</h4>
+            <h4 class="special-title en-text">Bring Your Furry Family</h4>
+            <ul class="special-list">
+              <li class="ja-text">小型犬 2匹まで、または小型犬＋中型犬 各1匹まで</li>
+              <li class="en-text">Up to 2 small dogs, or 1 small + 1 medium dog</li>
+              <li class="ja-text">完全貸切なので他のゲストに気兼ねなし</li>
+              <li class="en-text">Fully private — no other guests to worry about</li>
+              <li class="ja-text">広い庭でのびのびと</li>
+              <li class="en-text">Spacious outdoor area for your pets to roam</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="special-card">
+          <img src="https://sappororetreat.github.io/torinuma-villa/ski-room.jpg" alt="スキー趣味室" loading="lazy" class="special-img">
+          <div class="special-body">
+            <span class="special-label ja-text">スキー・スノボ対応</span>
+            <span class="special-label en-text">Ski &amp; Snowboard Ready</span>
+            <h4 class="special-title ja-text">ゲレンデから帰ったら、すぐくつろげる</h4>
+            <h4 class="special-title en-text">From the slopes straight to comfort</h4>
+            <ul class="special-list">
+              <li class="ja-text">ガレージ直結の趣味室でスキー用品を保管</li>
+              <li class="en-text">Dedicated gear room (direct garage access) for ski storage</li>
+              <li class="ja-text">コート掛け・スキーフック完備</li>
+              <li class="en-text">Coat hooks &amp; ski racks provided</li>
+              <li class="ja-text">ドラム式洗濯機完備 — スキーウェアも毎日清潔に</li>
+              <li class="en-text">Drum washer — keep ski gear fresh every day</li>
+              <li class="ja-text">富良野スキー場まで車10分。朝イチのパウダーを逃さない</li>
+              <li class="en-text">10 min to Furano Ski Resort — catch that first powder run</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="special-card">
+          <img src="https://sappororetreat.github.io/torinuma-villa/baby.jpg" alt="赤ちゃん・ファミリー対応" loading="lazy" class="special-img">
+          <div class="special-body">
+            <span class="special-label ja-text">赤ちゃん・ファミリー対応</span>
+            <span class="special-label en-text">Baby &amp; Family Ready</span>
+            <h4 class="special-title ja-text">赤ちゃん連れでも、荷物は最小限で</h4>
+            <h4 class="special-title en-text">Travel light, even with a baby</h4>
+            <ul class="special-list">
+              <li class="ja-text">ベビーベッド・ベビーチェア完備</li>
+              <li class="en-text">Crib &amp; high chair provided</li>
+              <li class="ja-text">ベビーカー・乳幼児用食器セット</li>
+              <li class="en-text">Stroller &amp; baby tableware available</li>
+              <li class="ja-text">一棟貸切だから夜泣きも気にせずゆっくり</li>
+              <li class="en-text">Entire villa — no need to worry about noise at night</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- AMENITIES TABLE -->
+    <div class="amenities-section reveal">
+      <h3 class="amenities-section-title ja-text">設備・アメニティ一覧</h3>
+      <h3 class="amenities-section-title en-text">Full Amenities List</h3>
+      <div class="amenities-cols">
+        <div class="amenities-col">
+          <p class="amenities-col-label ja-text">バス・洗面</p>
+          <p class="amenities-col-label en-text">Bath &amp; Wash</p>
+          <ul class="amenities-list">
+            <li class="ja-text">タオル・シーツ一式（人数分）</li>
+            <li class="en-text">Towels &amp; bed linen (per guest)</li>
+            <li class="ja-text">シャンプー・トリートメント・ボディソープ</li>
+            <li class="en-text">Shampoo, conditioner, body wash</li>
+            <li class="ja-text">歯ブラシ・カミソリ・コットン・綿棒</li>
+            <li class="en-text">Toothbrush, razor, cotton pads</li>
+            <li class="ja-text">ドライヤー</li>
+            <li class="en-text">Hair dryer</li>
+            <li class="ja-text">ウォシュレット（トイレ2箇所）</li>
+            <li class="en-text">Washlet toilet × 2</li>
+            <li class="ja-text"><strong>ドラム式洗濯機完備</strong>　— スキー後・長期滞在に安心</li>
+            <li class="en-text"><strong>Drum washer</strong> — ideal for ski trips &amp; long stays</li>
+            <li class="ja-text">洗濯物干し・ハンガー</li>
+            <li class="en-text">Drying rack &amp; hangers</li>
+          </ul>
+        </div>
+        <div class="amenities-col">
+          <p class="amenities-col-label ja-text">家電・通信</p>
+          <p class="amenities-col-label en-text">Electronics</p>
+          <ul class="amenities-list">
+            <li class="ja-text">高速Wi-Fi</li>
+            <li class="en-text">High-speed Wi-Fi</li>
+            <li class="ja-text">テレビ（動画配信対応）</li>
+            <li class="en-text">Smart TV (streaming)</li>
+            <li class="ja-text">全室冷暖房（エアコン・パネルヒーター）</li>
+            <li class="en-text">A/C &amp; panel heating in all rooms</li>
+            <li class="ja-text">セルフチェックイン</li>
+            <li class="en-text">Self check-in</li>
+          </ul>
+        </div>
+        <div class="amenities-col">
+          <p class="amenities-col-label ja-text">お子様・アウトドア</p>
+          <p class="amenities-col-label en-text">Family &amp; Outdoor</p>
+          <ul class="amenities-list">
+            <li class="ja-text">ベビーベッド・ベビーチェア・ベビーカー</li>
+            <li class="en-text">Crib, high chair, stroller</li>
+            <li class="ja-text">乳幼児用食器セット</li>
+            <li class="en-text">Baby tableware set</li>
+            <li class="ja-text">BBQスペース・器材レンタル可</li>
+            <li class="en-text">BBQ area · equipment rental available</li>
+            <li class="ja-text">花火可・ペット可</li>
+            <li class="en-text">Fireworks OK · Pets welcome</li>
+            <li class="ja-text">無料駐車場（ガレージ1台＋屋外複数台）</li>
+            <li class="en-text">Free parking (garage + outdoor spaces)</li>
+          </ul>
         </div>
       </div>
     </div>
@@ -876,7 +1159,9 @@ footer{background:var(--text);padding:3rem 0 2rem;color:rgba(255,255,255,.35);fo
       <div class="footer-links">
         <a href="#about" class="ja-text">物件について</a>
         <a href="#about" class="en-text">About</a>
-        <a href="#features" class="ja-text">特徴・設備</a>
+        <a href="#rooms" class="ja-text">間取り・設備</a>
+        <a href="#rooms" class="en-text">Rooms</a>
+        <a href="#features" class="ja-text">特徴</a>
         <a href="#features" class="en-text">Features</a>
         <a href="#around" class="ja-text">周辺情報</a>
         <a href="#around" class="en-text">Location</a>
