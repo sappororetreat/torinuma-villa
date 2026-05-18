@@ -211,7 +211,7 @@ nav.scrolled .lang-btn.active{background:var(--blue);color:#fff}
 @keyframes fadeUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
 .hero-eyebrow{font-family:'Raleway',sans-serif;font-size:10px;font-weight:500;letter-spacing:.3em;text-transform:uppercase;color:rgba(255,255,255,.75);display:flex;align-items:center;gap:12px;margin-bottom:1.5rem}
 .hero-eyebrow::before{content:'';display:block;width:32px;height:1px;background:var(--orange)}
-.hero-title{font-family:'Raleway',sans-serif;font-weight:300;font-size:clamp(2.8rem,7vw,5.8rem);color:#fff;line-height:1.1;letter-spacing:.04em;margin-bottom:1.5rem}
+.hero-title{font-family:'Raleway',sans-serif;font-weight:300;font-size:clamp(2.2rem,5.5vw,5.8rem);color:#fff;line-height:1.15;letter-spacing:.04em;margin-bottom:1.5rem;white-space:nowrap}
 .hero-title strong{font-weight:600;display:block}
 .hero-desc{font-size:clamp(.875rem,1.5vw,1rem);color:rgba(255,255,255,.78);max-width:480px;margin-bottom:2.2rem;font-weight:300;line-height:2;letter-spacing:.04em}
 .hero-pills{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:2.8rem}
@@ -282,7 +282,7 @@ nav.scrolled .lang-btn.active{background:var(--blue);color:#fff}
 
 /* AROUND */
 #around{background:var(--off)}
-.around-intro{font-size:.875rem;color:var(--text-mid);margin-bottom:3rem;letter-spacing:.04em;max-width:600px}
+.around-intro{font-size:.875rem;color:var(--text-mid);margin-bottom:3rem;letter-spacing:.04em;max-width:100%}
 
 .around-grid{
   display:grid;
@@ -377,8 +377,9 @@ footer{background:var(--text);padding:3rem 0 2rem;color:rgba(255,255,255,.35);fo
   .f-body{padding:2rem 2rem}
   .around-grid{grid-template-columns:repeat(2,1fr)}
 }
-@media(max-width:900px){
+@media(max-width:600px){
   #about .about-grid{grid-template-columns:1fr;gap:2.5rem}
+  .about-img{max-height:320px;object-fit:cover}
   .contact-grid{grid-template-columns:1fr;gap:2.5rem}
   .footer-inner{grid-template-columns:1fr;gap:1.5rem}
   .footer-links{justify-content:flex-start}
@@ -443,10 +444,11 @@ footer{background:var(--text);padding:3rem 0 2rem;color:rgba(255,255,255,.35);fo
     </p>
     <h1 class="hero-title">
       <span class="ja-text">富良野を、<strong>まるごと楽しもう。</strong></span>
+
       <span class="en-text">Experience Furano,<strong>all to yourself.</strong></span>
     </h1>
     <p class="hero-desc">
-      <span class="ja-text">スキー場まで車10分。薰衣草の丘、十勝岳の絶景。ペット連れも大人数もBBQも——全部できる一棟貸切。</span>
+      <span class="ja-text">スキー場まで車10分。薰衣草の丘、十勝岳の絶景。<br>ペット連れも大人数もBBQも——全部できる一棟貸切。</span>
       <span class="en-text">10 min to the ski resort. Lavender fields, Tokachi views. Pets, big groups, BBQ — all welcome in this fully private villa.</span>
     </p>
     <div class="hero-pills">
@@ -791,10 +793,10 @@ footer{background:var(--text);padding:3rem 0 2rem;color:rgba(255,255,255,.35);fo
     <div class="contact-grid">
       <div class="reveal">
         <span class="section-label">Book &amp; Contact</span>
-        <h2 class="section-title ja-text">ご予約・お問い合わせ</h2>
+        <h2 class="section-title ja-text">ご予約・<br>お問い合わせ</h2>
         <h2 class="section-title en-text">Book &amp; Enquiries</h2>
         <br>
-        <p class="ja-text">Beds24からオンライン予約が可能です。空き状況・料金はボタンよりご確認ください。</p>
+        <p class="ja-text">空き状況・料金はボタンよりご確認ください。</p>
         <p class="en-text">You can book online via Beds24. Check availability and pricing using the button below.</p>
         <br>
         <a href="https://beds24.com/booking2.php?propid=315590" target="_blank" rel="noopener" class="contact-book">
